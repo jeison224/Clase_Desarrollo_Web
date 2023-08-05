@@ -1,0 +1,41 @@
+let num1 = 22;
+let num2 = 12;
+if (num1 === num2) {
+  console.log("estos numeros son iguales");
+} else if (num1 > num2) {
+  console.log("este numero es mayor");
+} else {
+  console.log("este numero es menor");
+}
+/////////////////////////////
+const voleyball = "armador";
+switch (voleyball) {
+  case "libero":
+    console.log("Debe tener buena rece");
+    break;
+  case "punta":
+    console.log("debe tener buen ataque");
+    break;
+  case "armador":
+    console.log("debe tener precision");
+    break;
+  default:
+    console.log("el resto debe ser alto");
+}
+//////////////////////////
+let a = "prueba";
+let b = 0;
+do {
+  console.log(a + (b + 1));
+  b++;
+} while (b < 3);
+/////////////////////////
+for (let y = 0; y < 3; y += 1) {
+  console.log("prueba # " + (y + 1));
+}
+////////////////////////
+let pr = 0;
+while (pr < 5) {
+  console.log("jugador " + (pr + 1));
+  pr++;
+}
