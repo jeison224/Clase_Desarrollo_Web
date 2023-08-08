@@ -1,0 +1,8 @@
+const numeros = [1,2,3,4,5,6,7,8,9,10];
+const ejemplo_1 = (numeros)=>{
+  let opera=2
+  opera += numeros[4]
+numeros.push(opera)
+}
+ejemplo_1(numeros)
+console.log(numeros);
