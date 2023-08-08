@@ -6,3 +6,7 @@ numeros.push(opera)
 }
 ejemplo_1(numeros)
 console.log(numeros);
+
+const numeros =(numpar,numimpar)=>numpar*numimpar;
+const operacion=numeros(2,13)
+console.log(operacion)
