@@ -1,0 +1,80 @@
+const numeros = [2, 4, 6, 8, 10, 12];
+let replica = 0;
+numeros.forEach((item) => {
+  replica += item;
+});
+console.log(replica);
+const doble = numeros.map((valor) => valor * 2);
+console.log(doble);
+const personas = [
+  { nombre: "juan", apellido: "jose" },
+  { nombre: "jeison", apellido: "stiben" },
+  { nombre: "sebastian", apellido: "perez" }
+];
+const nombrecompleto = personas.map((Nombre) => {
+  return `${Nombre.nombre}  ${Nombre.apellido}`;
+});
+console.log(nombrecompleto);
+const numfiltro = numeros.filter((numero) => numero < 10);
+console.log(numfiltro);
+const nomfiltro = personas.filter((nombre) => nombre.apellido === "jose");
+console.log(nomfiltro);
+
+const frutas = ["banano", "manzana", "pera", "uva"];
+const cumple = frutas.every((palabra) => palabra.length > 3);
+console.log(cumple);
+const vegetales = [
+  { nombre: "tomate", buena: true },
+  { nombre: "zanahoria", buena: true },
+  { nombre: "cebolla", buena: true }
+];
+const cumplevege = vegetales.every((pala) => pala.buena === true);
+console.log(cumplevege);
+
+//canitdad de propiedade fijas
+const auto = {
+  color: "verde",
+  año: 2005,
+  puertas: 4,
+  marca: "BMW",
+  revisiones: {
+    fechaingreso: "10-enero-2020",
+    fechasalida: "30-enero-2020",
+    estadosalida: "bueno",
+    entregadopor: "Jeison Marulanda"
+  },
+  seguro: true,
+  registrado: true
+};
+let autos = [];
+autos.push(auto);
+const animales = [
+  {
+    nombre: "zeus",
+    especie: "perro",
+    revisiones: {
+      Dueño: "Jeison Marulanda",
+      Color: "blanco"
+    }
+  },
+  {
+    nombre: "ikaris",
+    especie: "gato",
+    revisiones: {
+      Dueño: "Sebastian Arango",
+      Color: "gris-negro"
+    }
+  },
+  {
+    nombre: "apolo",
+    especie: "perro",
+    revisiones: {
+      Dueño: "Jeison Marulanda",
+      Color: "negro"
+    }
+  }
+];
+const cumpleanima = animales.map(
+  (pala) => pala.revisiones.Dueño === "Jeison Marulanda"
+);
+console.log(cumpleanima);
