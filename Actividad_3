@@ -75,6 +75,9 @@ const animales = [
   }
 ];
 const cumpleanima = animales.map(
-  (pala) => pala.revisiones.Dueño === "Jeison Marulanda"
-);
+  (pala) => pala.revisiones.Dueño === "Jeison Marulanda");
 console.log(cumpleanima);
+
+const nombreanima = animales.filter((nombre) => nombre.nombre === "apolo");
+console.log(nombreanima);
+
