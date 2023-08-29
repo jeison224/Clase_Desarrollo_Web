@@ -1,0 +1,50 @@
+class Docente{
+    constructor(tipoprofe, asignatura){
+        this.tipoprofe = tipoprofe;
+        this.asignatura=asignatura;
+    }
+    gettipoprofe(){
+        return`Tipo de Profesor: ${this.tipoprofe}`;
+
+    }
+    getasignaturas(){
+        return `Asignatura: ${this.asignatura}`
+    }
+}
+class Profesor extends Docente{
+    constructor({
+        tipoprofe,
+        asignatura,
+        nombre,
+        apellido,
+        años_docente,
+    }){
+        super(tipoprofe,asignatura);
+        this.nombre=nombre;
+        this.apellido=apellido;
+        this.años_docente=años_docente;
+    }
+    getnombre(){
+        return`Nombre: ${this.nombre}`;
+    }
+    getapellido(){
+        return`Apellido: ${this.apellido}`;
+    }
+    getaños(){
+        return`Tiempo trabajo: ${this.años_docente}`;
+    }
+}
+const profe= new Profesor({
+    tipoprofe: 'Profesor Teorico',
+    asignatura: `Matematicas`,
+    nombre:`Javier`,
+    apellido:`Peña`,
+    años_docente:2,
+})
+console.log(profe.gettipoprofe());
+console.log(profe.getasignaturas());
+console.log(profe.getnombre());
+console.log(profe.getapellido());
+console.log(profe.getaños());
+
+
