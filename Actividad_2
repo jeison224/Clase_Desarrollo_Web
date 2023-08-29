@@ -7,6 +7,14 @@ numeros.push(opera)
 ejemplo_1(numeros)
 console.log(numeros);
 
-const numeros =(numpar,numimpar)=>numpar*numimpar;
-const operacion=numeros(2,13)
-console.log(operacion)
+const numero =(num1,num2)=>{
+const operacion= num1*num2
+console.log(operacion)}
+const callbackFunction = (callback, array, num1, num2) => {
+  ejemplo_1(array);
+  callback(num1, num2);
+};
+
+callbackFunction(numero, numeros, 5, 3);
+
+console.log(numeros);
